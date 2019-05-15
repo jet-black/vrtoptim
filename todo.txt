@@ -1,0 +1,2 @@
+* Push time change as far as possible
+* Swap step (change neighbour with current)
