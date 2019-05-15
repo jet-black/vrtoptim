@@ -43,7 +43,7 @@ import java.util.Random;
             changeTime(node, curTime);
             time = true;
         } else {
-            borrow(node, 0);
+            pushWorkers(node, 0);
         }
         int result = prevScore;
         for (int i = 0; i < TaskUtils.changeNodesIdx; i++) {
@@ -168,7 +168,7 @@ import java.util.Random;
         }
     }
 
-    private void borrow(Node node, int cnt) {
+    private void pushWorkers(Node node, int cnt) {
         Node neighbour = getNeighbour(node);
         if (neighbour == null) {
             return;
